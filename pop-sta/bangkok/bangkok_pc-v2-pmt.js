@@ -353,6 +353,7 @@ layonoff2.addEventListener('click', () => {
     } else if (layonoff2.checked == false) {
         // チェックボックスのチェックが外れた場合、レイヤを非表示にする
         map.setLayoutProperty("pop-station-Layer", "visibility", "none");
+        map.setLayoutProperty('populva-Layer', 'visibility', 'none');
         document.getElementById('calculation').disabled = true;
         document.getElementById('calculation').textContent='not availavle';
         document.getElementById('tot-pop').value='';
@@ -364,7 +365,7 @@ layonoff5.addEventListener('click', () => {
     if (layonoff5.checked == true) {
         map.setLayoutProperty("pop-change-Layer", "visibility", "visible");
         map.setLayoutProperty("pop-station-Layer", "visibility", "none");
-        map.setLayoutProperty('populva-Layer', 'visibility', 'none');
+        map.setLayoutProperty('populva-Layer', 'visibility', 'none');//6/1
        
         updateCheckboxes('pop-change-Layer');
         document.getElementById('calculation').disabled = true;
@@ -376,6 +377,7 @@ layonoff5.addEventListener('click', () => {
     } else {
             // チェックボックスのチェックが外れた場合、レイヤを非表示にする
         map.setLayoutProperty("pop-change-Layer", "visibility", "none");
+        map.setLayoutProperty('populcgva-Layer', 'visibility', 'none');//6/1
     }
 });
 layonoff3.addEventListener('click', () => {
