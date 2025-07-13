@@ -402,6 +402,10 @@ layonoff6.addEventListener('click', () => {
     }
 });
 
+document.getElementById("home").addEventListener("click", function () {
+    window.location.href = "https://hiro-maruyama.github.io/geouse/index-ini2.html";
+});
+
 
 // % popultion for set distance level 
 
